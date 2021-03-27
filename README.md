@@ -1,7 +1,7 @@
 # vg_coding_assesment
 
 Instructions:
-1. Clone the repository
+1. Clone the repository with the command: git clone https://github.com/andrewharrop/vg_coding_assesment
 <br />
 2. Navigate to the directory that contains "helper.js" and "index.js"
 <br />
