@@ -17,6 +17,6 @@ Once the ng serve command is done compiling, a windown should open with the pizz
 into the browser: http://localhost:4200
 <br /><br /> <br />
 The files containing code I wrore are:<br />
-/index.js
-/helper.js
+/index.js <br />
+/helper.js <br />
 /frontend/src/app/main-component/*
