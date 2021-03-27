@@ -15,3 +15,8 @@ Instructions:
 <br />
 Once the ng serve command is done compiling, a windown should open with the pizzaPalace system.  If a window does not open when the command is done compiling, copy this link
 into the browser: http://localhost:4200
+<br /><br /> <br />
+The files containing code I wrore are:<br />
+/index.js
+/helper.js
+/frontend/src/app/main-component/*
