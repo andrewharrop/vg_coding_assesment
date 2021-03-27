@@ -1,0 +1,31 @@
+{
+    "size": {
+        "Small": 12,
+        "Medium": 14,
+        "Large": 16
+    },
+    "topping_info": {
+        "Cheese": "Basic",
+        "Pepperoni": "Basic",
+        "Ham": "Basic",
+        "Pineapple": "Basic",
+        "Sausage": "Deluxe",
+        "Feta Cheese": "Deluxe",
+        "Tomatoes": "Deluxe",
+        "Olives": "Deluxe"
+    },
+    "topping_prices": {
+
+        "Basic": {
+            "Small": 0.5,
+            "Medium": 0.75,
+            "Large": 1
+        },
+        "Deluxe": {
+            "Small": 2,
+            "Medium": 3,
+            "Large": 4
+        }
+    },
+    "GST": 5
+}

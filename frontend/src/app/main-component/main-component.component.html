@@ -1,0 +1,66 @@
+<div id="makeapizza">
+    <h1>Welcom to pizza palace!</h1>
+
+    <h4>Make a pizza</h4>
+
+    <div id="entry">
+        Size:
+        <select (change)="changeSelect($event)">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+    </select>
+    </div>
+    <div id="entry">
+        Basic toppings:
+        <br /> Cheese
+        <input type="checkbox" [(ngModel)]="cheese"> Pepperoni
+        <input type="checkbox" [(ngModel)]="pepperoni">
+        <br /> Ham
+        <input type="checkbox" [(ngModel)]="ham"> Pineapple
+        <input type="checkbox" [(ngModel)]="pineapple">
+        <div id="entry">
+            <br /> Deluxe toppings
+            <br /> Sausage
+            <input type="checkbox" [(ngModel)]="feta"> Feta cheese
+            <input type="checkbox" [(ngModel)]="tomatoes">
+            <br /> Tomatoes
+            <input type="checkbox" [(ngModel)]="olives"> Olives
+        </div>
+    </div>
+    <div id="entry">
+        Quantity:
+        <input type="number" min="1" [(ngModel)]="quantity">
+
+    </div>
+    <div id="entry" (click)="addToOrder()">
+        <p>Estimated cost for this pizza: ${{est_cost}}</p>
+        <button>
+        Add to order
+    </button>
+    </div>
+
+</div>
+
+<div id="purchase">
+    <div *ngIf="est_total_cost">Estimated total cost: ${{est_total_cost}}</div>
+    <button id="purchase-button" (click)="purchase()">
+        Purchase order
+    </button>
+</div>
+<div *ngIf="response" id="receipt">
+
+    <h3>Receipt for recent order</h3>
+    <div *ngFor="let pie of response">
+        {{pie}}
+    </div>
+    <div>
+        Total before tax: ${{price}}
+    </div>
+    <div>
+        Total after tax: ${{after_tax}}
+    </div>
+    <button (click)="clearOrder()">
+        New order
+    </button>
+</div>
